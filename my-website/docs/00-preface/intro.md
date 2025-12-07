@@ -1,8 +1,9 @@
+
+
 ---
-id: home
-title: How to Use This Textbook
-sidebar_label: How to Use This Textbook
-slug: /
+id: intro
+title: Introduction
+sidebar_label: Introduction
 ---
 
 ## Introduction to the Physical AI & Humanoid Robotics Textbook

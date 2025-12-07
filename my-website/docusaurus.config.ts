@@ -26,7 +26,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          routeBasePath: '/', 
+          routeBasePath: '/',
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: false,
@@ -70,7 +70,7 @@ const config: Config = {
           items: [
             {
               label: 'Introduction',
-              to: '/00-preface/intro', 
+              to: '/preface/intro',
             },
           ],
         },
