@@ -1,0 +1,62 @@
+# Gitignore for AI-native Textbook Project
+
+# General
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/
+
+# Node.js
+node_modules/
+dist/
+build/
+*.log
+.env*
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnp/
+.pnp.js
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+.env.development
+.env.test
+.env.production
+.env.*.local
+.env.local
+
+# GitHub Actions
+.github/workflows/*.yml
+
+# Docusaurus specific (if any global settings)
+.docusaurus/
+build/
+
+# IDE-specific files
+*.iml
+.project
+.classpath
+.settings/
+
+# OS-specific files
+.localized
+.Trashes

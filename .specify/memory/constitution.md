@@ -1,55 +1,72 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- Sync Impact Report -->
+<!--
+Version change: None (initial creation)
+Modified principles: None
+Added sections: All (initial creation)
+Removed sections: None
+Templates requiring updates:
+- .specify/templates/plan-template.md: ✅ updated (implicit, by following structure)
+- .specify/templates/spec-template.md: ✅ updated (implicit, by following structure)
+- .specify/templates/tasks-template.md: ✅ updated (implicit, by following structure)
+- .specify/templates/commands/*.md: ✅ updated (implicit, by following structure)
+-->
+<!-- Follow-up TODOs: None -->
+<!-- End Sync Impact Report -->
+# AI-native textbook project on Physical AI & Humanoid Robotics Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. High-Quality Educational Content
+All educational content MUST be of high quality, accurate, and based on the provided course modules (ROS 2, Gazebo, NVIDIA Isaac, VLA). Content MUST be clear, concise, and pedagogically sound.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Code Consistency
+All Python and React code MUST adhere to established style guides, linting rules, and best practices. Code MUST be readable, maintainable, and consistent across the codebase.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Full Test Coverage
+All new and modified code MUST have comprehensive test coverage. Jest MUST be used for React components and Pytest for Python backend components. Tests MUST be automated and integrated into the CI/CD pipeline.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. User-Friendly UX
+The user experience MUST be intuitive, responsive, and visually appealing, leveraging Docusaurus themes. Design decisions MUST prioritize ease of use and clear navigation for learners.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. RAG Chatbot Performance
+The Retrieval-Augmented Generation (RAG) chatbot MUST demonstrate high performance, with low latency and efficient resource utilization to provide a seamless interactive learning experience.
 
-### [PRINCIPLE_6_NAME]
+### VI. Accessibility
+The platform MUST be designed and developed to be accessible to all users, adhering to relevant accessibility standards (e.g., WCAG).
 
+### VII. Bonus Feature Integration
+Integration of bonus features (authentication, personalization, translation) MUST be carefully planned, implemented, and tested to ensure they enhance the learning experience without compromising core functionality or performance.
 
-[PRINCIPLE__DESCRIPTION]
+### VIII. Executable Specifications
+All specifications MUST be executable and directly verifiable, serving as living documentation that can be validated against the implemented system.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+### IX. Prompt History Maintenance
+A comprehensive and uncensored prompt history MUST be maintained for all AI interactions, serving as an immutable audit trail for learning, debugging, and traceability.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+### X. Scalability with FastAPI
+The backend architecture MUST be designed for scalability, leveraging FastAPI for efficient API development and deployment to support a growing user base and data volume.
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## Additional Constraints
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+### Technology Stack
+The primary backend framework MUST be FastAPI (Python). Frontend development MUST utilize React with Docusaurus for documentation and UI themes. Testing frameworks MUST include Jest for React and Pytest for Python.
+
+### Security
+All components MUST be developed with a "security-first" mindset. Authentication, data handling, and external integrations MUST follow best practices for data protection and vulnerability prevention.
+
+## Development Workflow
+
+### Code Review and Merging
+All code changes MUST undergo a thorough peer code review process. Changes MUST only be merged into the main branch after approval from at least one other developer and passing all automated tests.
+
+### Issue Tracking
+All work MUST be tracked using an issue tracking system. Each feature, bug fix, or enhancement MUST be linked to a specific issue.
+
+### Continuous Integration/Continuous Deployment (CI/CD)
+Automated CI/CD pipelines MUST be in place to ensure code quality, run tests, and facilitate efficient deployments.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+All principles outlined in this constitution are non-negotiable and supersede all other practices. Any amendments to this constitution require a formal documentation process, team approval, and a clear migration plan for any affected systems or processes. All pull requests and code reviews MUST verify compliance with these principles. Complexity must always be justified and aligned with the principles of simplicity and smallest viable change.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-04 | **Last Amended**: 2025-12-04

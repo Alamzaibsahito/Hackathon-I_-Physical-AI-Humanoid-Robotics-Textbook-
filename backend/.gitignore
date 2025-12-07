@@ -1,0 +1,30 @@
+# Gitignore for FastAPI backend
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables
+.env
+.env.development
+.env.test
+.env.production
+.env.*.local
+.env.local
+
+# IDE-specific files
+*.iml
+.project
+.classpath
+.settings/
+
+# OS-specific files
+.localized
+.Trashes

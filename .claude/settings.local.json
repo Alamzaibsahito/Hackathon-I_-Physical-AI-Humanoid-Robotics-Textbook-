@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(.specify/scripts/bash/create-phr.sh:*)",
+      "Bash(git fetch --all --prune)",
+      "Bash(ls:*)",
+      "Bash(powershell -Command:*)",
+      "Bash(git checkout:*)",
+      "Bash(New-Item:*)",
+      "Bash(npx create-docusaurus@latest:*)",
+      "WebSearch",
+      "Bash(python -m venv:*)",
+      "Bash(C:\\Q4_hackathon_book\\backend\\.venv\\Scripts\\pip install:*)",
+      "Bash(\"C:/Q4_hackathon_book/backend/.venv/Scripts/pip.exe\" install:*)",
+      "Bash(npx docusaurus swizzle:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
