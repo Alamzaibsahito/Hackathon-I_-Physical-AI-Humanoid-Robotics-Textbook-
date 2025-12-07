@@ -1,0 +1,111 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * locally scoped CSS for this component.
+ */
+
+.hero {
+  padding: 4rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+}
+
+@media screen and (max-width: 996px) {
+  .hero {
+    padding: 2rem;
+  }
+}
+
+.heroInner {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.heroProjectTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2b3a55;
+}
+
+@media screen and (max-width: 680px) {
+  .heroProjectTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.heroTagline {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #4a6580;
+  opacity: 0.9;
+}
+
+.indexCtas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.indexCtasGitHubButtonWrapper {
+  display: flex;
+}
+
+.indexCtasGitHubButton {
+  border: 0;
+  width: 126px;
+  height: 30px;
+}
+
+@media screen and (max-width: 576px) {
+  .indexCtas {
+    flex-direction: column;
+  }
+
+  .indexCtasGitHubButtonWrapper {
+    margin-top: 1rem;
+  }
+}
+
+.button--primary {
+  background-color: #2b3a55;
+  border-color: #2b3a55;
+}
+
+.button--primary:hover {
+  background-color: #1d2943;
+  border-color: #1d2943;
+}
+
+/* Custom styling for the about section */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.padding-horiz--md {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.margin-vert--xl {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.col--offset-3 {
+  margin-left: 25%;
+}
+
+.col--6 {
+  width: 50%;
+}

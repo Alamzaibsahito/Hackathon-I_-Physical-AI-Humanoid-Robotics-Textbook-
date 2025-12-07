@@ -1,14 +1,23 @@
-import React from 'react';
-import Chatbot from '@site/src/components/Chatbot';
+import React, { useState, useEffect } from 'react';
+import { AuthProvider } from '../context/AuthContext';
 
-// Default implementation, that you might want to customize
-function Root({ children }) {
+// Root component that wraps the entire app
+export default function Root({ children }) {
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  // During SSR, return children without auth wrapper
+  if (!isClient) {
+    return <>{children}</>;
+  }
+
+  // On client, wrap with auth provider
   return (
-    <>
+    <AuthProvider>
       {children}
-      <Chatbot />
-    </>
+    </AuthProvider>
   );
 }
-
-export default Root;

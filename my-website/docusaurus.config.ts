@@ -47,13 +47,18 @@ const config: Config = {
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
+        href: '/', // Link logo to homepage that handles auth
       },
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'bookSidebar',
+          to: '/',
+          label: 'Home',
           position: 'left',
-          label: 'Book',
+        },
+        {
+          to: '/preface/intro',
+          label: 'Textbook',
+          position: 'left',
         },
         {
           href: 'https://github.com/Alamzaibsahito?tab=repositories',
@@ -66,20 +71,45 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Book',
+          title: 'Physical AI TextBook',
           items: [
             {
               label: 'Introduction',
               to: '/preface/intro',
             },
+            {
+              label: 'Chapters',
+              to: '/preface/intro',
+            },
+            {
+              label: 'Contribute',
+              to: '/preface/contributing',
+            },
           ],
         },
         {
-          title: 'GitHub',
+          title: 'Resources',
           items: [
             {
               label: 'GitHub',
               href: 'https://github.com/Alamzaibsahito?tab=repositories',
+            },
+            {
+              label: 'Community',
+              href: 'https://github.com/Alamzaibsahito?tab=repositories',
+            },
+          ],
+        },
+        {
+          title: 'More',
+          items: [
+            {
+              label: 'Documentation',
+              to: '/preface/intro',
+            },
+            {
+              label: 'Glossary',
+              to: '/glossary',
             },
           ],
         },
