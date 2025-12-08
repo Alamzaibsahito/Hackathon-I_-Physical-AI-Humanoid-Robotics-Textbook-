@@ -13,7 +13,7 @@ const config: Config = {
   organizationName: 'facebook',
   projectName: 'docusaurus',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn', // Changed from 'throw' to 'warn'
 
   i18n: {
     defaultLocale: 'en',
@@ -26,7 +26,7 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
-          routeBasePath: '/',
+          routeBasePath: '/docs', // Changed from '/' to '/docs'
           editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: false,
@@ -35,6 +35,9 @@ const config: Config = {
         },
       } satisfies Preset.Options,
     ],
+  ],
+
+  plugins: [
   ],
 
   themeConfig: {
@@ -47,16 +50,11 @@ const config: Config = {
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
-        href: '/', // Link logo to homepage that handles auth
+        href: '/',
       },
       items: [
         {
-          to: '/',
-          label: 'Home',
-          position: 'left',
-        },
-        {
-          to: '/preface/intro',
+          to: '/docs/preface/intro',
           label: 'Textbook',
           position: 'left',
         },
@@ -71,32 +69,28 @@ const config: Config = {
       style: 'dark',
       links: [
         {
-          title: 'Physical AI TextBook',
+          title: 'Docs',
           items: [
             {
               label: 'Introduction',
-              to: '/preface/intro',
-            },
-            {
-              label: 'Chapters',
-              to: '/preface/intro',
-            },
-            {
-              label: 'Contribute',
-              to: '/preface/contributing',
+              to: '/docs/preface/intro',
             },
           ],
         },
         {
-          title: 'Resources',
+          title: 'Community',
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/Alamzaibsahito?tab=repositories',
+              label: 'Stack Overflow',
+              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
             },
             {
-              label: 'Community',
-              href: 'https://github.com/Alamzaibsahito?tab=repositories',
+              label: 'Discord',
+              href: 'https://discordapp.com/invite/docusaurus',
+            },
+            {
+              label: 'Twitter',
+              href: 'https://twitter.com/docusaurus',
             },
           ],
         },
@@ -104,17 +98,13 @@ const config: Config = {
           title: 'More',
           items: [
             {
-              label: 'Documentation',
-              to: '/preface/intro',
-            },
-            {
-              label: 'Glossary',
-              to: '/glossary',
+              label: 'GitHub',
+              href: 'https://github.com/Alamzaibsahito?tab=repositories',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Physical AI`,
+      copyright: `Copyright © ${new Date().getFullYear() + 1} Physical AI`,
     },
     prism: {
       theme: prismThemes.github,

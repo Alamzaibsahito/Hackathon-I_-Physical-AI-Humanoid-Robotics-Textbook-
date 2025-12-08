@@ -1,11 +1,8 @@
 import React from 'react';
-import { useAuth } from '../context/AuthContext';
 import { motion, AnimatePresence } from 'framer-motion';
 import RobotAnimation from './RobotAnimation';
 
 const BookContent = () => {
-  const { user } = useAuth();
-
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -27,7 +24,7 @@ const BookContent = () => {
               Physical AI & Humanoid Robotics Textbook
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-              Welcome {user?.name || 'Learner'}! Your personalized learning journey begins here.
+              Welcome Learner! Your personalized learning journey begins here.
             </p>
           </motion.div>
 
